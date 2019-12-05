@@ -296,8 +296,10 @@ body {
 	padding: 16px;
     background: #F7F7F7;
     grid-column: 4/8;
-    grid-row: 3/9;
+    grid-row: 2/8;
     z-index: 10;
+    height: 100%;
+    width: 100%;
 }
 
 /************ TITRE ***********/
@@ -430,8 +432,9 @@ input[type="file"] + label.bouton:hover::before {
   align-items: center;
   filter: url("#goo");
   grid-column: 5/7;
-  grid-row: 9/10;
+  grid-row: 8/10;
   cursor: pointer;
+  margin-left: 10%;
 }
 
 /****** BOUTON PARTAGE ******/
@@ -469,7 +472,7 @@ input[type="file"] + label.bouton:hover::before {
   text-align: center;
 }
 .social i {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 .social a {
   color: #FFF;
@@ -490,4 +493,30 @@ input[type="file"] + label.bouton:hover::before {
   opacity: 1;
   transition: 1.2s all ease;
   transform: translateY(56px);
+}
+
+
+@media (max-width: 425px){
+    .formulaire{
+        font-family: 'Montserrat Alternates', sans-serif;
+        padding: 16px;
+        background: #F7F7F7;
+        grid-column: 3/9;
+        grid-row: 2/8;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .formulaire textarea#message{
+         height: 150px;
+    }
+    .social i {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
