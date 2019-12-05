@@ -5,7 +5,7 @@ if(isset($_GET['page']) && !empty($_GET['page'])) {
 }
 
 else {
-    $page = 'Home';
+    $page = 'Envoi';
 }
 
 $page = ucfirst($page);
