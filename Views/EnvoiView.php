@@ -27,7 +27,7 @@ require_once 'header.php';
         </svg>
 <!-- ---------- -->
 <!-- INTRO -->
-        <img id="logo_titre" src="titre-white.svg"></img>
+        <img id="logo_titre" src="assets/images/titre-white.svg"></img>
         <div class="intro">
             <p>Envoyez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
         </div>

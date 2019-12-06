@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Montserrat+Alternates&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/scss/style.css">
-    <link rel="icon" type="image/svg" href="titre-logo.png">
+    <link rel="icon" type="image/png" href="assets/images/titre-logo.png">
     <title>OuiTransfer</title>
 </head>
 <body class="grille">
