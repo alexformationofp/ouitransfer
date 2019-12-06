@@ -31,7 +31,7 @@ require_once 'header.php';
             <h1>Envoyez votre fichier</h1>
             <form action="" method="post" enctype="multipart/form-data">
                 
-                <input type="file" class="custom-file-input" name="img[]" multiple>
+                <input type="file" id="file" name="img[]" multiple>
                 <label for="file" class="bouton">Choisissez un fichier</label>
                 <input type="text" name="field1" placeholder="Votre Adresse e-mail" />
                 <input type="email" name="field2" placeholder="L'adresse mail du destinataire" />
