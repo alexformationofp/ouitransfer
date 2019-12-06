@@ -8,6 +8,7 @@ $expired = $dbh->query('SELECT id, chemin FROM envoi WHERE -1*(14+DATEDIFF(date_
 $expired = $expired->fetchAll();
 
 // pour chaque élément récupéré par la requête au-dessus, on le supprime de la table
+
 foreach ($expired as $value) {
     $id = $value['id'];
     $dbh->query('DELETE FROM envoi WHERE id = ' . $id);
@@ -16,4 +17,5 @@ foreach ($expired as $value) {
         unlink($value['chemin']);
     }
 }
+
 // 0 0 * * * php '/var/www/html/projet/Models/cron.php'
