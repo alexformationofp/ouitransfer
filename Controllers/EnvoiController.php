@@ -28,7 +28,6 @@ if ($_FILES && $_FILES['img']) {
             //move_uploaded_file($_FILES['img']['tmp_name'][$i], './uploads/' . $newname);
         }
         $zip->close();
-        
         // Create HTML Link option to download zip
         $success = basename($zip_name);
        
