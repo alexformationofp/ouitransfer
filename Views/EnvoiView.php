@@ -1,7 +1,7 @@
 <?php
 require_once 'header.php';
 ?>
-
+<!-- BACKGROUND -->
 <div id="Clouds">
             <div class="Cloud Foreground"></div>
             <div class="Cloud Background"></div>
@@ -26,6 +26,11 @@ require_once 'header.php';
             </defs>
         </svg>
 <!-- ---------- -->
+<!-- INTRO -->
+        <img id="logo_titre" src="titre-white.svg"></img>
+        <div class="intro">
+            <p>Envoyez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
+        </div>
 <!-- FORMULAIRE -->
         <div class="formulaire">
             <h1>Envoyez votre fichier</h1>
