@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Montserrat+Alternates&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/svg" href="titre-logo.png">
         <title>Document</title>
     </head>
     <body class="grille">
@@ -33,21 +34,30 @@
                 C38.409,16.43,36.368,14.388,33.85,14.388z"/>
             </defs>
         </svg>
+        
 <!-- ---------- -->
+
+<!-- INTRO -->
+        <img id="logo_titre" src="titre-white.svg"></img>
+        <div class="intro">
+            <p>Envoyez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
+        </div>
+<!-- ---------- -->
+
 <!-- FORMULAIRE -->
         <div class="formulaire">
             <h1>Envoyez votre fichier</h1>
-            <form>
-                
+            <form id="formulaire">
                 <input type="file" id="file">
                 <label for="file" class="bouton">Choisissez un fichier</label>
-                <input type="text" name="field1" placeholder="Votre Adresse e-mail" />
-                <input type="email" name="field2" placeholder="L'adresse mail du destinataire" />
-                <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
+                <input id="emailexpe" type="email" name="field1" placeholder="Votre Adresse e-mail" />
+                <input id="emaildest" type="email" name="field2" placeholder="L'adresse mail du destinataire" />
+                <textarea id="message" name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
                 <input type="submit" value="Envoyez" />
             </form>
         </div>
 <!-- ---------- -->
+
 <!-- SOCIAL -->
         <div class="media">
             <div class="button">Share</div>
@@ -78,6 +88,7 @@
                 </defs>
               </svg>
 <!-- ---------- -->
+
     <script src="https://kit.fontawesome.com/c0eeb2702d.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
