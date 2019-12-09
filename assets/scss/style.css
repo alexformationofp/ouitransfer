@@ -521,6 +521,11 @@ input[type="file"] + label.bouton:hover::before {
   transition: 1.2s all ease;
   transform: translateY(56px); }
 
+/**************** RECEPTION **********************************************************************************************/
+.retour {
+  border: 2px solid red;
+  text-align: center; }
+
 /**************** RESPONSIVE **********************************************************************************************/
 @media (max-width: 425px) {
   .formulaire {
