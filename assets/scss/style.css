@@ -50,14 +50,11 @@ a {
 html,
 body {
   margin: 0;
-  padding: 0; }
-
+  padding: 0; };
 html {
-  height: 100%; }
-
+  height: 100%; };
 body {
-  min-height: 100%; }
-
+  min-height: 100%; };
 body {
   color: #FFF;
   background-color: #FD940A;
@@ -69,8 +66,7 @@ body {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
-  z-index: 0; }
-
+  z-index: 0; };
 /**************** BACKGROUND **********************************************************************************************/
 #Clouds {
   position: absolute;
@@ -86,8 +82,7 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
-
+  user-select: none; };
 @-webkit-keyframes FadeIn {
   from {
     opacity: 0; }
@@ -114,19 +109,16 @@ body {
   animation-timing-function: linear;
   -webkit-animation-name: Float, FadeFloat;
   animation-name: Float, FadeFloat;
-  z-index: 1; }
-
+  z-index: 1; };
 .Cloud.Foreground {
   height: 10%;
   min-height: 20px;
-  z-index: 3; }
-
+  z-index: 3; };
 .Cloud.Background {
   height: 9.09090909%;
   min-height: 8px;
   -webkit-animation-duration: 210s;
-  animation-duration: 210s; }
-
+  animation-duration: 210s; };
 @-webkit-keyframes Float {
   from {
     -webkit-transform: translateX(100%) translateZ(0);
@@ -158,18 +150,15 @@ body {
 .Cloud:nth-child(10) {
   -webkit-animation-delay: -184.61538462s;
   animation-delay: -184.61538462s;
-  top: 60%; }
-
+  top: 60%; };
 .Cloud.Foreground:nth-child(10) {
   -webkit-animation-duration: 80s;
   animation-duration: 80s;
-  height: 35%; }
-
+  height: 35%; };
 .Cloud.Background:nth-child(10) {
   -webkit-animation-duration: 110s;
   animation-duration: 110s;
-  height: -3.40909091%; }
-
+  height: -3.40909091%; };
 .Cloud:nth-child(9) {
   -webkit-animation-delay: -166.15384615s;
   animation-delay: -166.15384615s;
