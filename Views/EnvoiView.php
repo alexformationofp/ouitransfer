@@ -38,8 +38,8 @@ require_once 'header.php';
                 
                 <input type="file" id="file" name="img[]" multiple>
                 <label for="file" class="bouton">Choisissez un fichier</label>
-                <input type="text" name="field1" placeholder="Votre Adresse e-mail" />
-                <input type="email" name="field2" placeholder="L'adresse mail du destinataire" />
+                <input type="text" name="emailExp" placeholder="Votre Adresse e-mail" />
+                <input type="email" name="emailDest" placeholder="L'adresse mail du destinataire" />
                 <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
                 <input type="submit" value="Envoyez" />
             </form>
