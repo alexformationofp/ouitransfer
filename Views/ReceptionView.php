@@ -30,11 +30,14 @@ require_once 'header.php';
 <!-- ---------- -->
 <!-- INTRO -->
         <img id="logo_titre" src="assets/images/titre-white.svg"></img>
+        <div class="intro">
+            <p>Réceptionnez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
+        </div>
 
 <!-- FORMULAIRE -->
     <div class="retour">
         <h1 class="titre-retour">Recevez vos fichiers</h1>
-        <a href="#"><button>Téléchargez</button></a>
+        <a href="#"><button>Téléchargez ici</button></a>
     </div>
 <!-- ---------- -->
 <!-- SOCIAL -->

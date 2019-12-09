@@ -524,10 +524,48 @@ input[type="file"] + label.bouton:hover::before {
 
 /**************** RECEPTION **********************************************************************************************/
 
-
 .retour{
-        border: 2px solid red;
         text-align: center;
+        background-color: #f7f7f7;
+        font-family: 'Montserrat Alternates', sans-serif;
+        padding: 16px;
+        grid-column: 5/7;
+        grid-row: 4/6;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+}
+.titre-retour{
+        background: rgb(255, 123, 0);
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+        margin: -16px -16px 0px -16px;
+        font-family: 'Baloo Thambi', cursive;
+}
+button{
+        background-color: #F9A72B;
+        border-radius: 20px;
+        border: #F9A72B;
+        width: 70%;
+        padding: 2%;
+        background: #F9A72B;
+        border-bottom-style: none;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;
+        margin-right: 25%;
+        margin-left: 25%;
+        color: #fff;
+        font-family: 'Baloo Thambi', cursive;
+        cursor: pointer;
+        margin: 50px 0;
+        font-size: 100%;
+}
+button:hover{
+        background: #d3460d;
 }
 
 /**************** RESPONSIVE **********************************************************************************************/
