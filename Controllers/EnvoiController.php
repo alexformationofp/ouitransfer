@@ -46,7 +46,7 @@ $emailExp = $_POST['emailExp']; // Déclaration de l'adresse de destination.
 $emailDest = $_POST['emailDest'];
 
 // On filtre les serveurs qui présentent des bogues.
-if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $mail)) {
+if (!preg_match("#^[a-z0-9._-]+@(hotmail|live|msn).[a-z]{2,4}$#", $emailDest)) {
     $passage_ligne = "\r\n";
 }
 else {
@@ -54,7 +54,7 @@ else {
 }
 
 //=====Déclaration des messages au format texte et au format HTML.
-//$message_txt = $_POST['whoami']." vous a envoyé une carte de voeux !".$passage_ligne."Suivez ce lien pour la voir :".$passage_ligne."https://lucasv.promo-24.codeur.online/carte-de-voeux/";
+$message_txt = "";
 
 $message_html = '<!doctype html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><title></title><!--[if !mso]><!-- --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style type="text/css">#outlook a { padding:0; }
 body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }
@@ -118,7 +118,7 @@ $message.= $passage_ligne."--".$boundary_alt."--".$passage_ligne;
 $message.= $passage_ligne."--".$boundary.$passage_ligne;
 
 //=====Envoi de l'e-mail.
-mail($mailDest,$sujet,$message,$header);
+mail($emailDest,$sujet,$message,$header);
 
 }
 
