@@ -1,6 +1,7 @@
 <?php
 require_once 'header.php';
 ?>
+
 <!-- BACKGROUND -->
 <div id="Clouds">
             <div class="Cloud Foreground"></div>
@@ -15,7 +16,7 @@ require_once 'header.php';
             <div class="Cloud Background"></div>
             <!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
         </div>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg id="faischierresponsive" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="40px" height="24px" viewBox="0 0 40 24" enable- xml:space="preserve">
             <defs>
                 <path id="Cloud" d="M33.85,14.388c-0.176,0-0.343,0.034-0.513,0.054c0.184-0.587,0.279-1.208,0.279-1.853c0-3.463-2.809-6.271-6.272-6.271
@@ -38,13 +39,10 @@ require_once 'header.php';
                 
                 <input type="file" id="file" name="img[]" multiple>
                 <label for="file" class="bouton">Choisissez un fichier</label>
-                <input type="text" name="field1" placeholder="Votre Adresse e-mail" />
-                <input type="email" name="field2" placeholder="L'adresse mail du destinataire" />
+                <input type="text" name="emailExp" placeholder="Votre Adresse e-mail" />
+                <input type="email" name="emailDest" placeholder="L'adresse mail du destinataire" />
                 <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
-
-                <input type="submit" value="Envoyez" href="#popup1" />
-
-            
+                <input id="myBtn" type="submit" value="Envoyez" />
             </form>
         </div>
 <!-- ---------- -->

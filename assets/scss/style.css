@@ -143,17 +143,17 @@ body {
     transform: translateX(-15%) translateZ(0); } }
 @-webkit-keyframes FadeFloat {
   0%,
-    100% {
+100% {
     opacity: 0; }
   5%,
-    90% {
+90% {
     opacity: 1; } }
 @keyframes FadeFloat {
   0%,
-    100% {
+100% {
     opacity: 0; }
   5%,
-    90% {
+90% {
     opacity: 1; } }
 .Cloud:nth-child(10) {
   -webkit-animation-delay: -184.61538462s;
@@ -319,7 +319,7 @@ body {
   height: auto;
   margin-left: 25%;
   margin-right: 25%;
-  z-index: 100; }
+  z-index: 10; }
 
 .intro {
   grid-column: 1/4;
@@ -330,7 +330,7 @@ body {
   color: #fff;
   font-weight: 300;
   font-size: 160%;
-  z-index: 100; }
+  z-index: 10; }
 
 /**************** FORMULAIRE **********************************************************************************************/
 .formulaire {
@@ -521,16 +521,56 @@ input[type="file"] + label.bouton:hover::before {
   transition: 1.2s all ease;
   transform: translateY(56px); }
 
+/**************** RESPONSIVE **********************************************************************************************/
 @media (max-width: 425px) {
   .formulaire {
     font-family: 'Montserrat Alternates', sans-serif;
     padding: 16px;
     background: #F7F7F7;
     grid-column: 3/9;
-    grid-row: 2/8;
+    grid-row: 2/5;
     z-index: 10;
     height: 100%;
-    width: 100%; } }
+    width: 100%; }
+
+  #logo_titre {
+    grid-column: 2/8;
+    grid-row: 1/2;
+    width: 100%;
+    height: auto;
+    margin-left: 25%;
+    margin-right: 25%; }
+
+  .intro {
+    grid-column: 3/10;
+    grid-row: 5/6;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Baloo Thambi', cursive;
+    color: #fff;
+    font-weight: 300;
+    font-size: 160%; }
+
+  .media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: url("#goo");
+    grid-column: 4/8;
+    grid-row: 6/7;
+    cursor: pointer; }
+
+  html {
+    height: 1500px; }
+
+  #faischierresponsive {
+    display: none; }
+
+  .grille {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(8, 12.5%);
+    z-index: 0; } }
 @media (max-width: 768px) {
   .formulaire textarea#message {
     height: 150px; }
