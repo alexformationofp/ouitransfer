@@ -318,7 +318,8 @@ body {
   width: 50%;
   height: auto;
   margin-left: 25%;
-  margin-right: 25%; }
+  margin-right: 25%;
+  z-index: 100; }
 
 .intro {
   grid-column: 1/4;
@@ -328,7 +329,8 @@ body {
   font-family: 'Baloo Thambi', cursive;
   color: #fff;
   font-weight: 300;
-  font-size: 160%; }
+  font-size: 160%;
+  z-index: 100; }
 
 /**************** FORMULAIRE **********************************************************************************************/
 .formulaire {

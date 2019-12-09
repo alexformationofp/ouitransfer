@@ -41,7 +41,10 @@ require_once 'header.php';
                 <input type="text" name="field1" placeholder="Votre Adresse e-mail" />
                 <input type="email" name="field2" placeholder="L'adresse mail du destinataire" />
                 <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
-                <input type="submit" value="Envoyez" />
+
+                <input type="submit" value="Envoyez" href="#popup1" />
+
+            
             </form>
         </div>
 <!-- ---------- -->
