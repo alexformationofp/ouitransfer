@@ -43,16 +43,6 @@ require_once 'header.php';
                 <input type="email" name="field2" placeholder="L'adresse mail du destinataire" />
                 <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
                 <input id="myBtn" type="submit" value="Envoyez" />
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
-            </div>
-
-            </div>
             </form>
         </div>
 <!-- ---------- -->
