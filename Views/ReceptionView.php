@@ -30,7 +30,7 @@ require_once 'header.php';
         </svg>
 <!-- ---------- -->
 <!-- INTRO -->
-        <img id="logo_titre" src="assets/images/titre-white.svg"></img>
+        <img id="logo_titre" class="logo_titrereception" src="assets/images/titre-white.svg"></img>
         <div class="intro introreception">
             <p>Réceptionnez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
         </div>
@@ -38,7 +38,7 @@ require_once 'header.php';
 <!-- FORMULAIRE -->
     <div class="retour">
         <h1 class="titre-retour">Recevez vos fichiers</h1>
-        <a href="http://ouitransfer.alexandre-bielinski.fr/assets/transferts/<?php echo $transfert ?>"><button>Téléchargez ici</button></a>
+        <a href="https://jordanm.promo-31.codeur.online/ouitransfer/assets/transferts/<?php echo $transfert ?>"><button>Téléchargez ici</button></a>
     </div>
 <!-- ---------- -->
 <!-- SOCIAL -->
