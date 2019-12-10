@@ -38,7 +38,7 @@ require_once 'header.php';
 <!-- FORMULAIRE -->
     <div class="retour">
         <h1 class="titre-retour">Recevez vos fichiers</h1>
-        <a href="http://ouitransfer.alexandre-bielinski.fr/assets/transferts/<?php echo $transfert ?>"><button>Téléchargez ici</button></a>
+        <a href="http://jordanm.promo-31.codeur.online/ouitransfer/assets/transferts/<?php echo $transfert ?>"><button>Téléchargez ici</button></a>
     </div>
 <!-- ---------- -->
 <!-- SOCIAL -->
