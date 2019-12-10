@@ -568,6 +568,7 @@ button:hover{
         background: #d3460d;
 }
 
+
 /**************** RESPONSIVE **********************************************************************************************/
 
 
@@ -600,7 +601,7 @@ button:hover{
       font-weight: 300;
       font-size: 160%;
     }
-    .media {
+    .mediareception {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -620,7 +621,28 @@ button:hover{
       grid-template-columns: repeat(10,10%);
       grid-template-rows: repeat(8,12.5%);
       z-index: 0;
-  }
+    }
+    .retour{
+        grid-column: 2/9;
+        grid-row: 2/3;
+    }
+    .introreception{
+        grid-column: 3/10;
+        grid-row: 3/4;
+        padding: 40px;
+        text-align: center;
+        font-family: 'Baloo Thambi', cursive;
+        color: #fff;
+        font-weight: 300;
+        font-size: 160%;
+        margin-right: 10%;
+        z-index: 1000;
+      }
+
+      .mediareception{
+              grid-row:4/5;
+      }
+
 }
 
 @media (max-width: 768px){

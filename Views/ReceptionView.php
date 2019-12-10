@@ -31,7 +31,7 @@ require_once 'header.php';
 <!-- ---------- -->
 <!-- INTRO -->
         <img id="logo_titre" src="assets/images/titre-white.svg"></img>
-        <div class="intro">
+        <div class="intro introreception">
             <p>Réceptionnez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
         </div>
 
@@ -42,7 +42,7 @@ require_once 'header.php';
     </div>
 <!-- ---------- -->
 <!-- SOCIAL -->
-        <div class="media">
+        <div class="media mediareception">
             <div class="button">Share</div>
             <div class="social twitter">
                 <a href="#" target="_blank">
