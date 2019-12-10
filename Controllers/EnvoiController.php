@@ -6,7 +6,7 @@ if ($_FILES && $_FILES['img']) {
     if (!empty($_FILES['img']['name'][0])) {
         
         $zip = new ZipArchive();
-        $zip_name = getcwd() . "/assets/transferts/transfert_" . time() . ".zip";
+        $zip_name = getcwd() . "/assets/transferts/oui-transfer_" . time() . ".zip";
         
         // Create a zip target
         if ($zip->open($zip_name, ZipArchive::CREATE) !== TRUE) {
