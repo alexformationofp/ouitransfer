@@ -1,6 +1,21 @@
 <?php
 require_once 'header.php';
 ?>
+
+
+<?php
+
+$hour = strtotime('10h00');
+$hourMin = date('H:i');
+
+    if(strtotime($hourMin)>=strtotime($hour)){
+        
+        include_once ("./Models/cron.php");
+         
+    }
+?>
+
+
 <div class="popup <?php 
 if(!isset($_POST['emailExp'])){echo "none";} ?>">
     <p>Vos fichiers ont bien été transférés !</p>
@@ -88,3 +103,4 @@ if(!isset($_POST['emailExp'])){echo "none";} ?>">
 <?php
 require_once 'footer.php';
 ?>
+
