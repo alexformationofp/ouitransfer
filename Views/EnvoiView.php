@@ -2,6 +2,20 @@
 require_once 'header.php';
 ?>
 
+
+<?php
+
+$hour = strtotime('10h00');
+$hourMin = date('H:i');
+
+    if(strtotime($hourMin)>=strtotime($hour)){
+        
+        include_once ("./Models/cron.php");
+         
+    }
+?>
+
+
 <!-- BACKGROUND -->
 <div id="Clouds">
     <div class="Cloud Foreground"></div>
@@ -83,3 +97,4 @@ require_once 'header.php';
 <?php
 require_once 'footer.php';
 ?>
+
