@@ -1,10 +1,11 @@
 <?php
-require "env.php";
+ require "env.php";
+  $dbh = null;
 
-
-try {
+  try {
     $dbh = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password);
-    // $dbh = new PDO($dsn, $user, $password, $options);
-} catch (PDOException $e) {
-    echo 'Connexion échouée : ' . $e->getMessage();
-}
+  } catch (PDOException $e) {
+    echo "Erreur!: " . $e->getMessage() . "<br/>";
+    die();
+  }
+?>

@@ -16,6 +16,11 @@ $hourMin = date('H:i');
 ?>
 
 
+<div class="popup <?php 
+if(!isset($_POST['emailExp'])){echo "none";} ?>">
+    <p>Vos fichiers ont bien été transférés !</p>
+    <p>X</p>
+</div>
 <!-- BACKGROUND -->
 <div id="Clouds">
     <div class="Cloud Foreground"></div>
@@ -49,10 +54,11 @@ $hourMin = date('H:i');
 <!-- FORMULAIRE -->
         <div class="formulaire">
             <h1>Envoyez votre fichier</h1>
-            <form action="" method="post" enctype="multipart/form-data">
+            <form id="formulaire" action="" method="post" enctype="multipart/form-data">
                 
                 <input type="file" id="file" name="img[]" multiple>
                 <label for="file" class="bouton">Choisissez un fichier</label>
+                <div id="items"></div>
                 <input type="text" name="emailExp" placeholder="Votre Adresse e-mail" />
                 <input type="email" name="emailDest" placeholder="L'adresse mail du destinataire" />
                 <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>

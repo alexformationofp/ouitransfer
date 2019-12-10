@@ -1,6 +1,7 @@
 <?php
 require_once 'header.php';
 
+
 ?>
 
 <!-- BACKGROUND -->
@@ -29,19 +30,19 @@ require_once 'header.php';
         </svg>
 <!-- ---------- -->
 <!-- INTRO -->
-        <img id="logo_titre" src="assets/images/titre-white.svg"></img>
-        <div class="intro">
+        <img id="logo_titre" class="logo_titrereception" src="assets/images/titre-white.svg"></img>
+        <div class="intro introreception">
             <p>Réceptionnez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
         </div>
 
 <!-- FORMULAIRE -->
     <div class="retour">
         <h1 class="titre-retour">Recevez vos fichiers</h1>
-        <a href="#"><button>Téléchargez ici</button></a>
+        <a href="https://jordanm.promo-31.codeur.online/ouitransfer/assets/transferts/<?php echo $transfert ?>"><button>Téléchargez ici</button></a>
     </div>
 <!-- ---------- -->
 <!-- SOCIAL -->
-        <div class="media">
+        <div class="media mediareception">
             <div class="button">Share</div>
             <div class="social twitter">
                 <a href="#" target="_blank">
