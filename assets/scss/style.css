@@ -632,7 +632,10 @@ button:hover {
     grid-row: 1/2; }
 
   .mediareception {
-    grid-row: 4/5; } }
+    grid-row: 4/5; }
+
+  .media {
+    display: none; } }
 @media (max-width: 768px) {
   .formulaire textarea#message {
     height: 150px; }
