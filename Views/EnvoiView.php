@@ -43,6 +43,7 @@ if(!isset($_POST['emailExp'])){echo "none";} ?>">
                 
                 <input type="file" id="file" name="img[]" multiple>
                 <label for="file" class="bouton">Choisissez un fichier</label>
+                <div id="items"></div>
                 <input type="text" name="emailExp" placeholder="Votre Adresse e-mail" />
                 <input type="email" name="emailDest" placeholder="L'adresse mail du destinataire" />
                 <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>

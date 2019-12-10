@@ -641,6 +641,9 @@ button:hover {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px; } }
+#items {
+  color: black; }
+
 .popup {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 100000;
