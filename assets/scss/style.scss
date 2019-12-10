@@ -657,3 +657,25 @@ button:hover{
 
 
 
+
+
+.popup{
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 100000;
+        grid-column: 1/11;
+        grid-row: 1/11;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        p:last-child{
+                position: absolute;
+                right: 25px;
+                top: 25px;
+                font-size: 25px;
+        }
+}
+.none{
+        display: none;
+}
+
