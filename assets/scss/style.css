@@ -62,7 +62,8 @@ body {
   color: #FFF;
   background-color: #FD940A;
   background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
-  font-family: 'Montserrat Alternates', sans-serif; }
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px; }
 
 /**************** GRILLE *****************************/
 .grille {
@@ -383,7 +384,8 @@ input[type="file"] + label:hover {
 input[type="file"] + label.bouton {
   background-color: #F9A72B;
   border-radius: 50px;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
 
 input[type="file"] + label.bouton::before {
   color: #fff;
@@ -646,7 +648,11 @@ button:hover {
     margin-left: 5px;
     margin-right: 5px; } }
 #items {
-  color: black; }
+  color: black;
+  color: black;
+  height: 50px;
+  overflow: scroll;
+  text-align: center; }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.8);
