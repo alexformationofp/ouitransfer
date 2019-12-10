@@ -1,6 +1,7 @@
 <?php
 require_once 'header.php';
 
+
 ?>
 
 <!-- BACKGROUND -->
@@ -37,7 +38,7 @@ require_once 'header.php';
 <!-- FORMULAIRE -->
     <div class="retour">
         <h1 class="titre-retour">Recevez vos fichiers</h1>
-        <a href="#"><button>Téléchargez ici</button></a>
+        <a href="http://ouitransfer.alexandre-bielinski.fr/assets/transferts/<?php echo $transfert ?>"><button>Téléchargez ici</button></a>
     </div>
 <!-- ---------- -->
 <!-- SOCIAL -->
