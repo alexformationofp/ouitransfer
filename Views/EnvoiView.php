@@ -1,7 +1,11 @@
 <?php
 require_once 'header.php';
 ?>
-
+<div class="popup <?php 
+if(!isset($_POST['emailExp'])){echo "none";} ?>">
+    <p>Vos fichiers ont bien été transférés !</p>
+    <p>X</p>
+</div>
 <!-- BACKGROUND -->
 <div id="Clouds">
     <div class="Cloud Foreground"></div>
@@ -35,7 +39,7 @@ require_once 'header.php';
 <!-- FORMULAIRE -->
         <div class="formulaire">
             <h1>Envoyez votre fichier</h1>
-            <form action="" method="post" enctype="multipart/form-data">
+            <form id="formulaire" action="" method="post" enctype="multipart/form-data">
                 
                 <input type="file" id="file" name="img[]" multiple>
                 <label for="file" class="bouton">Choisissez un fichier</label>
