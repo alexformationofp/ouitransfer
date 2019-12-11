@@ -46,17 +46,6 @@ a {
   text-decoration: none;
   color: inherit; }
 
-/**************** PAGE GENERAL **********************************************************************************************/
-body {
-  min-height: 100%; }
-
-body {
-  color: #fff;
-  background-color: #fd940a;
-  background-image: radial-gradient(circle, #f9a72b 0%, #fa9026 70%, #fb6c1f 100%);
-  font-family: "Montserrat Alternates", sans-serif; }
-
-/**************** GRILLE *****************************/
 /**************** BACKGROUND **********************************************************************************************/
 #Clouds {
   position: absolute;
@@ -129,17 +118,17 @@ body {
     transform: translateX(-15%) translateZ(0); } }
 @-webkit-keyframes FadeFloat {
   0%,
-  100% {
+    100% {
     opacity: 0; }
   5%,
-  90% {
+    90% {
     opacity: 1; } }
 @keyframes FadeFloat {
   0%,
-  100% {
+    100% {
     opacity: 0; }
   5%,
-  90% {
+    90% {
     opacity: 1; } }
 .Cloud:nth-child(10) {
   -webkit-animation-delay: -184.61538462s;
@@ -297,10 +286,19 @@ body {
 .Cloud.Background {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAqCAYAAAAUJM0rAAACFUlEQVRo3u3aPSwDYRzH8UZEbAYiYrDYjLZGpIPBJLGwSKwi0k1iYBKDdFJsEiMxSZgsFZJGiGjqJWEhSKuaNKRUG8r5PfI8SXOud72+PH2eu2f47Ndv7+V5/nee/G6bh5MWmIV9iEMWvkGjfiADD7AHk9BU6+PSNK0kPAINwwXkC6KU6gvC4HVyKB/clhHHCDnbTqHbSaEaYIv+OK3KyBk274RQrXBXg0B6B/QPkTIUiZTiEIm5gkbZQjXTJ5nG2ZFsocJ1iMQEZQk1VcdIGl2L9Yoeitwj3uocirgRPVRAgEjMoMihkgKFStIzK063QVHYhKF6h/IKFMlKGpaNlhM8Qq1JFIp5gQHeoSIShmJPST/PUElJQ7FN9hivUGmJQxE56OQRKiN5qL/NNY9QKQeEIpdgR7VC9cEqHeGeUyEHXHrMUiWhyKx6BV4dEsNMtNxQI4Ls33h5LidUoEYjXKEXoXZDLbgsEBOzE8qne8fmJhE7oWIujUQcwhyMmy0VSKRRF0cyWlclYMYo1LEKZOgRugpDpVWUot5ZLI8LlwN23bNQKoY1vwpVmmsS6kOFsPRJQl2qENZIqGkVwnp9xb5nUksEcxm2hZlQMcy3OYXTgx0VpOi2pl8/jwqpMP9sF5twBl08ctE7I/dws5l5D5y4OBj51HvdzluYdlik0RL06cjkKpSlB1Span5x/AQb5Hfrxyy/oU5ISeVw53AAAAAASUVORK5CYII=); }
 
+/**************** PAGE GENERAL **********************************************************************************************/
+body {
+  min-height: 100%; }
+
+body {
+  color: #fff;
+  background-color: #fd940a;
+  background-image: radial-gradient(circle, #f9a72b 0%, #fa9026 70%, #fb6c1f 100%);
+  font-family: "Montserrat Alternates", sans-serif; }
+
 /**************** INTRO **********************************************************************************************/
 .container {
   max-width: 1100px;
-  /* width: 1100px; */
   margin: 10% auto;
   display: flex;
   align-items: flex-start;
@@ -311,14 +309,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* max-width: 600px; */
   width: 350px; }
 
 #logo_titre {
   width: 80%;
   height: auto;
-  /* margin-left: 25%; */
-  /* margin-right: 25%; */
+  transition: all .3s ease-in-out;
   z-index: 10; }
 
 .intro {
@@ -330,6 +326,9 @@ body {
   font-size: 160%;
   z-index: 10;
   padding-top: 0; }
+
+#logo_titre:hover {
+  transform: scale(1.05); }
 
 /**************** FORMULAIRE **********************************************************************************************/
 .formulaire {
@@ -366,7 +365,6 @@ input[type="file"] + label {
   font-weight: 600;
   margin-bottom: 1rem;
   outline: none;
-  /* padding: 1rem 50px; */
   position: relative;
   transition: all 0.3s;
   vertical-align: middle;
@@ -497,42 +495,6 @@ input[type="file"] + label.bouton:hover::before {
 .button:hover {
   background-color: #ff7b00; }
 
-/****** STYLE MEDIA ******/
-.social {
-  opacity: 0;
-  position: relative;
-  margin: 8px;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  display: inline-block;
-  color: #fff;
-  font-size: 20px;
-  text-align: center; }
-
-.social i {
-  margin-top: 10px; }
-
-.social a {
-  color: #fff; }
-
-.twitter {
-  background: #00aced; }
-
-.facebook {
-  background: #3b5998; }
-
-.google {
-  background: #dd4b39; }
-
-.youtube {
-  background: #bb0000; }
-
-.clicked {
-  opacity: 1;
-  transition: 1.2s all ease;
-  transform: translateY(56px); }
-
 /**************** RECEPTION **********************************************************************************************/
 .retour {
   text-align: center;
@@ -557,7 +519,6 @@ input[type="file"] + label.bouton:hover::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 150px; */
   height: 40px;
   background-color: #f9a72b;
   transition: all 0.3s ease-in-out;
@@ -571,6 +532,15 @@ input[type="file"] + label.bouton:hover::before {
 
 .retour a:hover {
   background-color: #ff7b00; }
+
+.retour p {
+  color: black;
+  padding-top: 20px;
+  /* padding: 4px; */
+  text-align: center;
+  line-height: 22px; }
+  .retour p:last-of-type {
+    padding-top: 0; }
 
 .centrage {
   align-items: center; }
@@ -601,6 +571,10 @@ input[type="file"] + label.bouton:hover::before {
 
 .none {
   display: none; }
+
+footer p {
+  text-align: center;
+  margin-bottom: 20px; }
 
 /**************** RESPONSIVE **********************************************************************************************/
 @media (max-width: 699px) {
