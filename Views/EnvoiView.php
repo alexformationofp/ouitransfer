@@ -1,21 +1,6 @@
 <?php
 require_once 'header.php';
 ?>
-
-
-<?php
-
-$hour = strtotime('10h00');
-$hourMin = date('H:i');
-
-    if(strtotime($hourMin)>=strtotime($hour)){
-        
-        include_once ("./Models/cron.php");
-         
-    }
-?>
-
-
 <div class="popup <?php 
 if(!isset($_POST['emailExp'])){echo "none";} ?>">
     <p>Vos fichiers ont bien été transférés !</p>
@@ -35,7 +20,7 @@ if(!isset($_POST['emailExp'])){echo "none";} ?>">
     <div class="Cloud Background"></div>
     <!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
 </div>
-<svg id="faischierresponsive" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<!-- <svg id="faischierresponsive" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     width="40px" height="24px" viewBox="0 0 40 24" enable- xml:space="preserve">
     <defs>
         <path id="Cloud" d="M33.85,14.388c-0.176,0-0.343,0.034-0.513,0.054c0.184-0.587,0.279-1.208,0.279-1.853c0-3.463-2.809-6.271-6.272-6.271
@@ -44,31 +29,18 @@ if(!isset($_POST['emailExp'])){echo "none";} ?>">
         c0,3.467,2.811,6.275,6.272,6.275c0.214,0,27.156,0.109,27.577,0.109c2.519,0,4.56-2.043,4.56-4.562
         C38.409,16.43,36.368,14.388,33.85,14.388z"/>
     </defs>
-</svg>
+</svg> -->
 <!-- ---------- -->
-<!-- INTRO -->
-        <img id="logo_titre" src="assets/images/titre-white.svg"></img>
-        <div class="intro">
-            <p>Envoyez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
+<div class="container">
+    <!-- INTRO -->
+       <div class="col">
+           <div class="intro">
+            <a href="http://ouitransfer.alexandre-bielinski.fr/"><img id="logo_titre" src="assets/images/titre-white.svg"></a>
+            <p>Envoyez vos fichiers les plus volumineux en toute légèreté</p>
         </div>
-<!-- FORMULAIRE -->
-        <div class="formulaire">
-            <h1>Envoyez votre fichier</h1>
-            <form id="formulaire" action="" method="post" enctype="multipart/form-data">
-                
-                <input type="file" id="file" name="img[]" multiple>
-                <label for="file" class="bouton">Choisissez un fichier</label>
-                <div id="items"></div>
-                <input type="text" name="emailExp" placeholder="Votre Adresse e-mail" />
-                <input type="email" name="emailDest" placeholder="L'adresse mail du destinataire" />
-                <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
-                <input id="myBtn" type="submit" value="Envoyez" />
-            </form>
-        </div>
-<!-- ---------- -->
-<!-- SOCIAL -->
+        <!-- SOCIAL -->
         <div class="media">
-            <div class="button">Share</div>
+            <div class="button">Partagez</div>
             <div class="social twitter">
                 <a href="#" target="_blank">
                     <i class="fab fa-twitter"></i>
@@ -86,7 +58,7 @@ if(!isset($_POST['emailExp'])){echo "none";} ?>">
                 </a>
             </div>
         </div>  
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <defs>
                   <filter id="goo">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
@@ -94,8 +66,30 @@ if(!isset($_POST['emailExp'])){echo "none";} ?>">
                     <feBlend in="SourceGraphic" in2="goo" />
                     </filter>
                 </defs>
-              </svg>
+              </svg> -->
 <!-- ---------- -->
+<!-- FORMULAIRE -->
+       </div> 
+        <div class="col">
+            <div class="formulaire">
+            <h1>Partagez ce que vous voulez !</h1>
+            <form id="formulaire" action="" method="post" enctype="multipart/form-data">
+                
+                <input type="file" id="file" name="img[]" multiple>
+                <label for="file" class="bouton" id="upload">Sélectionnez le(s) fichier(s)</label>
+                <div id="items"></div>
+                <input type="text" name="emailExp" placeholder="Votre Adresse e-mail" />
+                <input type="email" name="emailDest" placeholder="L'adresse mail du destinataire" />
+                <textarea name="field3" placeholder="Ecrivez votre message (facultatif)" id="message"></textarea>
+                <input id="myBtn" type="submit" value="Envoyez" />
+            </form>
+        </div>
+        </div>
+        
+<!-- ---------- -->
+
+</div>
+
     <script src="https://kit.fontawesome.com/c0eeb2702d.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
@@ -103,4 +97,3 @@ if(!isset($_POST['emailExp'])){echo "none";} ?>">
 <?php
 require_once 'footer.php';
 ?>
-

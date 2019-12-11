@@ -6,19 +6,19 @@ require_once 'header.php';
 
 <!-- BACKGROUND -->
 <div id="Clouds">
-            <div class="Cloud Foreground"></div>
-            <div class="Cloud Background"></div>
-            <div class="Cloud Foreground"></div>
-            <div class="Cloud Background"></div>
-            <div class="Cloud Foreground"></div>
-            <div class="Cloud Background"></div>
-            <div class="Cloud Background"></div>
-            <div class="Cloud Foreground"></div>
-            <div class="Cloud Background"></div>
-            <div class="Cloud Background"></div>
-            <!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
-        </div>
-        <svg id="faischierresponsive" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <div class="Cloud Foreground"></div>
+    <div class="Cloud Background"></div>
+    <div class="Cloud Foreground"></div>
+    <div class="Cloud Background"></div>
+    <div class="Cloud Foreground"></div>
+    <div class="Cloud Background"></div>
+    <div class="Cloud Background"></div>
+    <div class="Cloud Foreground"></div>
+    <div class="Cloud Background"></div>
+    <div class="Cloud Background"></div>
+    <!--  <svg viewBox="0 0 40 24" class="Cloud"><use xlink:href="#Cloud"></use></svg>-->
+</div>
+<!-- <svg id="faischierresponsive" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="40px" height="24px" viewBox="0 0 40 24" enable- xml:space="preserve">
             <defs>
                 <path id="Cloud" d="M33.85,14.388c-0.176,0-0.343,0.034-0.513,0.054c0.184-0.587,0.279-1.208,0.279-1.853c0-3.463-2.809-6.271-6.272-6.271
@@ -27,23 +27,17 @@ require_once 'header.php';
                 c0,3.467,2.811,6.275,6.272,6.275c0.214,0,27.156,0.109,27.577,0.109c2.519,0,4.56-2.043,4.56-4.562
                 C38.409,16.43,36.368,14.388,33.85,14.388z"/>
             </defs>
-        </svg>
+        </svg> -->
 <!-- ---------- -->
-<!-- INTRO -->
-        <img id="logo_titre" class="logo_titrereception" src="assets/images/titre-white.svg"></img>
+<div class="container centrage">
+    <div class="col">
         <div class="intro introreception">
-            <p>Réceptionnez vos fichiers les plus volumineux<br> en toute légèreté<br><i id="icon" class="fas fa-cloud"></i></p>
+            <a href="http://ouitransfer.alexandre-bielinski.fr/"><img id="logo_titre" src="assets/images/titre-white.svg"></a>
+            <p>Réceptionnez vos fichiers les plus volumineux en toute légèreté</p>
         </div>
-
-<!-- FORMULAIRE -->
-    <div class="retour">
-        <h1 class="titre-retour">Recevez vos fichiers</h1>
-        <a href="https://jordanm.promo-31.codeur.online/ouitransfer/assets/transferts/<?php echo $transfert ?>"><button>Téléchargez ici</button></a>
-    </div>
-<!-- ---------- -->
-<!-- SOCIAL -->
+        <!-- SOCIAL -->
         <div class="media mediareception">
-            <div class="button">Share</div>
+            <div class="button">Partagez</div>
             <div class="social twitter">
                 <a href="#" target="_blank">
                     <i class="fab fa-twitter"></i>
@@ -60,8 +54,22 @@ require_once 'header.php';
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
-        </div>  
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        </div>
+    </div>
+    <div class="col">
+        <!-- FORMULAIRE -->
+        <div class="retour">
+            <h1 class="titre-retour">Recevez vos fichiers</h1>
+            <a href="http://ouitransfer.alexandre-bielinski.fr/assets/transferts/<?php echo $transfert ?>">Téléchargez ici</a>
+        </div>
+        <!-- ---------- --
+    </div>
+    >
+
+</div>
+<!-- INTRO -->
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                 <defs>
                   <filter id="goo">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
@@ -69,12 +77,12 @@ require_once 'header.php';
                     <feBlend in="SourceGraphic" in2="goo" />
                     </filter>
                 </defs>
-              </svg>
-<!-- ---------- -->
-    <script src="https://kit.fontawesome.com/c0eeb2702d.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
+              </svg> -->
+        <!-- ---------- -->
+        <script src="https://kit.fontawesome.com/c0eeb2702d.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
 
-<?php
-require_once 'footer.php';
-?>
+        <?php
+        require_once 'footer.php';
+        ?>

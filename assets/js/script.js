@@ -51,6 +51,9 @@ popup.addEventListener("click", function(e) {
   popup.classList.add("none");
 });
 
+
+let upload = document.querySelector('#upload');
+
 let children = [];
 function displayFileName(element, children, parent){
     const p = document.createElement("p");
@@ -73,4 +76,5 @@ document.querySelector("#file").addEventListener("change", function(e) {
         displayFileName(element, children, items);
     }
   }
+  upload.innerHTML = "Votre envoi :"
 });

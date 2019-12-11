@@ -47,31 +47,16 @@ a {
   color: inherit; }
 
 /**************** PAGE GENERAL **********************************************************************************************/
-html,
-body {
-  margin: 0;
-  padding: 0; }
-
-html {
-  height: 100%; }
-
 body {
   min-height: 100%; }
 
 body {
-  color: #FFF;
-  background-color: #FD940A;
-  background-image: radial-gradient(circle, #F9A72B 0%, #FA9026 70%, #FB6C1F 100%);
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 20px; }
+  color: #fff;
+  background-color: #fd940a;
+  background-image: radial-gradient(circle, #f9a72b 0%, #fa9026 70%, #fb6c1f 100%);
+  font-family: "Montserrat Alternates", sans-serif; }
 
 /**************** GRILLE *****************************/
-.grille {
-  display: grid;
-  grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(10, 10%);
-  z-index: 0; }
-
 /**************** BACKGROUND **********************************************************************************************/
 #Clouds {
   position: absolute;
@@ -144,17 +129,17 @@ body {
     transform: translateX(-15%) translateZ(0); } }
 @-webkit-keyframes FadeFloat {
   0%,
-100% {
+  100% {
     opacity: 0; }
   5%,
-90% {
+  90% {
     opacity: 1; } }
 @keyframes FadeFloat {
   0%,
-100% {
+  100% {
     opacity: 0; }
   5%,
-90% {
+  90% {
     opacity: 1; } }
 .Cloud:nth-child(10) {
   -webkit-animation-delay: -184.61538462s;
@@ -313,47 +298,57 @@ body {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAqCAYAAAAUJM0rAAACFUlEQVRo3u3aPSwDYRzH8UZEbAYiYrDYjLZGpIPBJLGwSKwi0k1iYBKDdFJsEiMxSZgsFZJGiGjqJWEhSKuaNKRUG8r5PfI8SXOud72+PH2eu2f47Ndv7+V5/nee/G6bh5MWmIV9iEMWvkGjfiADD7AHk9BU6+PSNK0kPAINwwXkC6KU6gvC4HVyKB/clhHHCDnbTqHbSaEaYIv+OK3KyBk274RQrXBXg0B6B/QPkTIUiZTiEIm5gkbZQjXTJ5nG2ZFsocJ1iMQEZQk1VcdIGl2L9Yoeitwj3uocirgRPVRAgEjMoMihkgKFStIzK063QVHYhKF6h/IKFMlKGpaNlhM8Qq1JFIp5gQHeoSIShmJPST/PUElJQ7FN9hivUGmJQxE56OQRKiN5qL/NNY9QKQeEIpdgR7VC9cEqHeGeUyEHXHrMUiWhyKx6BV4dEsNMtNxQI4Ls33h5LidUoEYjXKEXoXZDLbgsEBOzE8qne8fmJhE7oWIujUQcwhyMmy0VSKRRF0cyWlclYMYo1LEKZOgRugpDpVWUot5ZLI8LlwN23bNQKoY1vwpVmmsS6kOFsPRJQl2qENZIqGkVwnp9xb5nUksEcxm2hZlQMcy3OYXTgx0VpOi2pl8/jwqpMP9sF5twBl08ctE7I/dws5l5D5y4OBj51HvdzluYdlik0RL06cjkKpSlB1Span5x/AQb5Hfrxyy/oU5ISeVw53AAAAAASUVORK5CYII=); }
 
 /**************** INTRO **********************************************************************************************/
+.container {
+  max-width: 1100px;
+  /* width: 1100px; */
+  margin: 10% auto;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* max-width: 600px; */
+  width: 350px; }
+
 #logo_titre {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  width: 50%;
+  width: 80%;
   height: auto;
-  margin-left: 25%;
-  margin-right: 25%;
+  /* margin-left: 25%; */
+  /* margin-right: 25%; */
   z-index: 10; }
 
 .intro {
-  grid-column: 1/4;
-  grid-row: 5/8;
   padding: 30px;
   text-align: center;
-  font-family: 'Baloo Thambi', cursive;
+  font-family: "Baloo Thambi", cursive;
   color: #fff;
   font-weight: 300;
   font-size: 160%;
-  z-index: 10; }
+  z-index: 10;
+  padding-top: 0; }
 
 /**************** FORMULAIRE **********************************************************************************************/
 .formulaire {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   padding: 16px;
-  background: #F7F7F7;
-  grid-column: 4/8;
-  grid-row: 2/8;
+  background: #f3f1f1;
   z-index: 10;
-  height: 100%;
   width: 100%; }
 
 /************ TITRE ***********/
 .formulaire h1 {
   background: #ff7b00;
   padding: 20px 0;
-  font-size: 140%;
+  font-size: 25px;
   font-weight: 300;
   text-align: center;
   color: #fff;
   margin: -16px -16px 0px -16px;
-  font-family: 'Baloo Thambi', cursive; }
+  font-family: "Baloo Thambi", cursive; }
 
 /****** BOUTON FICHIER ******/
 input[type="file"] {
@@ -367,25 +362,25 @@ input[type="file"] + label {
   color: #fff;
   cursor: pointer;
   display: flex;
-  font-size: inherit;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 1rem;
   outline: none;
-  padding: 1rem 50px;
+  /* padding: 1rem 50px; */
   position: relative;
   transition: all 0.3s;
   vertical-align: middle;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding: 15px; }
 
 input[type="file"] + label:hover {
   background-color: #d3460d; }
 
 input[type="file"] + label.bouton {
-  background-color: #F9A72B;
+  background-color: #f9a72b;
   border-radius: 50px;
-  overflow: hidden;
-  text-align: center; }
+  overflow: hidden; }
 
 input[type="file"] + label.bouton::before {
   color: #fff;
@@ -396,23 +391,23 @@ input[type="file"] + label.bouton::before {
   right: 130%;
   line-height: 3.3;
   position: absolute;
-  top: 0px;
+  top: -13%;
   transition: all 0.3s; }
 
 input[type="file"] + label.bouton:hover {
   background-color: #ff7b00; }
 
 input[type="file"] + label.bouton:hover::before {
-  right: 70%; }
+  right: 88%; }
 
 /****** INPUT TEXT ******/
 .formulaire input[type="text"],
 .formulaire input[type="email"],
 .formulaire textarea {
-  -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   outline: none;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -423,7 +418,7 @@ input[type="file"] + label.bouton:hover::before {
   border: 1px solid #ccc;
   padding: 3%;
   color: #555;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   resize: none; }
 
 .formulaire input[type="text"]:focus,
@@ -439,23 +434,40 @@ input[type="file"] + label.bouton:hover::before {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  width: 50%;
-  padding: 2%;
-  background: #F9A72B;
+  width: 100%;
+  background: #f9a72b;
   border-bottom-style: none;
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
-  border-radius: 20px;
-  margin-right: 25%;
-  margin-left: 25%;
+  border-radius: 50px;
   color: #fff;
-  font-family: 'Baloo Thambi', cursive;
-  cursor: pointer; }
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s;
+  margin-top: 8px; }
 
 .formulaire input[type="submit"]:hover,
 .formulaire input[type="button"]:hover {
-  background: #d3460d; }
+  background: #ff7b00; }
+
+.formulaireinput[type="submit"]::before {
+  color: #fff;
+  content: "\f382";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 100%;
+  height: 100%;
+  right: 130%;
+  line-height: 3.3;
+  position: absolute;
+  top: -16%;
+  transition: all 0.3s; }
+
+.formulaireinput[type="submit"]:hover::before {
+  right: 84%; }
 
 /**************** RESEAUX **********************************************************************************************/
 .media {
@@ -463,29 +475,27 @@ input[type="file"] + label.bouton:hover::before {
   justify-content: center;
   align-items: center;
   filter: url("#goo");
-  grid-column: 5/7;
-  grid-row: 8/10;
   cursor: pointer;
-  margin-left: 10%; }
+  z-index: 99; }
 
 /****** BOUTON PARTAGE ******/
 .button {
-  z-index: 99;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 40px;
-  background: linear-gradient(45deg, #ff7b00, #c96100);
+  background-color: #f9a72b;
+  transition: all 0.3s ease-in-out;
   border-radius: 20px;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 200; }
 
 .button:hover {
-  background: #d3460d; }
+  background-color: #ff7b00; }
 
 /****** STYLE MEDIA ******/
 .social {
@@ -496,7 +506,7 @@ input[type="file"] + label.bouton:hover::before {
   height: 40px;
   border-radius: 100%;
   display: inline-block;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   text-align: center; }
 
@@ -504,7 +514,7 @@ input[type="file"] + label.bouton:hover::before {
   margin-top: 10px; }
 
 .social a {
-  color: #FFF; }
+  color: #fff; }
 
 .twitter {
   background: #00aced; }
@@ -527,10 +537,8 @@ input[type="file"] + label.bouton:hover::before {
 .retour {
   text-align: center;
   background-color: #f7f7f7;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   padding: 16px;
-  grid-column: 5/7;
-  grid-row: 4/6;
   z-index: 10;
   height: 100%;
   width: 100%; }
@@ -538,131 +546,53 @@ input[type="file"] + label.bouton:hover::before {
 .titre-retour {
   background: #ff7b00;
   padding: 20px 0;
-  font-size: 140%;
+  font-size: 25px;
   font-weight: 300;
   text-align: center;
   color: #fff;
   margin: -16px -16px 0px -16px;
-  font-family: 'Baloo Thambi', cursive; }
+  font-family: "Baloo Thambi", cursive; }
 
-button {
-  background-color: #F9A72B;
-  border-radius: 20px;
-  border: #F9A72B;
-  width: 70%;
-  padding: 2%;
-  background: #F9A72B;
-  border-bottom-style: none;
-  border-top-style: none;
-  border-right-style: none;
-  border-left-style: none;
-  margin-right: 25%;
-  margin-left: 25%;
+.retour a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 150px; */
+  height: 40px;
+  background-color: #f9a72b;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
   color: #fff;
-  font-family: 'Baloo Thambi', cursive;
-  cursor: pointer;
-  margin: 50px 0;
-  font-size: 100%; }
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 8px;
+  margin: 20px auto; }
 
-button:hover {
-  background: #d3460d; }
+.retour a:hover {
+  background-color: #ff7b00; }
 
-/**************** RESPONSIVE **********************************************************************************************/
-@media (max-width: 425px) {
-  .formulaire {
-    font-family: 'Montserrat Alternates', sans-serif;
-    padding: 16px;
-    background: #F7F7F7;
-    grid-column: 2/9;
-    grid-row: 3/8;
-    z-index: 10;
-    height: 100%;
-    width: 100%; }
+.centrage {
+  align-items: center; }
 
-  #logo_titre {
-    grid-column: 2/10;
-    grid-row: 1/2;
-    width: 100%;
-    height: auto;
-    margin-left: unset;
-    margin-right: unset; }
-
-  .intro {
-    grid-column: 2/10;
-    grid-row: 8/9;
-    padding: 40px;
-    text-align: center;
-    font-family: 'Baloo Thambi', cursive;
-    color: #fff;
-    font-weight: 300;
-    font-size: 160%; }
-
-  .mediareception {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: url("#goo");
-    grid-column: 4/8;
-    grid-row: 6/7;
-    cursor: pointer; }
-
-  #faischierresponsive {
-    display: none; }
-
-  .grille {
-    display: grid;
-    grid-template-columns: repeat(10, 10%);
-    grid-template-rows: repeat(6, 12%);
-    z-index: 0; }
-
-  .retour {
-    grid-column: 2/9;
-    grid-row: 4/6; }
-
-  .introreception {
-    grid-column: 2/10;
-    grid-row: 6/7;
-    text-align: center;
-    font-family: 'Baloo Thambi', cursive;
-    color: #fff;
-    font-weight: 300;
-    font-size: 160%;
-    z-index: 1000; }
-
-  #logo_titre.logo_titrereception {
-    grid-column: 2/10;
-    grid-row: 1/2; }
-
-  .mediareception {
-    grid-row: 4/5; }
-
-  .media {
-    display: none; } }
-@media (max-width: 768px) {
-  .formulaire textarea#message {
-    height: 150px; }
-
-  .social i {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px; } }
 #items {
   color: black;
-  color: black;
-  height: 50px;
-  overflow: scroll;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 12px; }
+  #items p {
+    padding: 3px; }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 100000;
-  grid-column: 1/11;
-  grid-row: 1/11;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; }
+  cursor: pointer;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0; }
   .popup p:last-child {
     position: absolute;
     right: 25px;
@@ -671,5 +601,10 @@ button:hover {
 
 .none {
   display: none; }
+
+/**************** RESPONSIVE **********************************************************************************************/
+@media (max-width: 699px) {
+  .media {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
