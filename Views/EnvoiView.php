@@ -1,6 +1,9 @@
 <?php
 require_once 'header.php';
 ?>
+
+
+
 <div class="popup <?php 
 if(!isset($_POST['emailExp'])){echo "none";} ?>">
     <p>Vos fichiers ont bien été transférés !</p>

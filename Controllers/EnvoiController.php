@@ -1,6 +1,16 @@
 <?php
-
 require "Models/Envoi.php";
+
+$hour = strtotime('10h00');
+$hourMin = date('H:i');
+
+    if(strtotime($hourMin)>=strtotime($hour)){
+        
+        include_once ("./Models/cron.php");
+         
+    }
+    
+
 if ($_FILES && $_FILES['img']) {
     
     if (!empty($_FILES['img']['name'][0])) {
